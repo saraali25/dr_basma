@@ -133,7 +133,7 @@ const Dashboard = () => {
                  data-[state=active]:before:top-0 data-[state=active]:before:bottom-0 data-[state=active]:before:w-1 
                  data-[state=active]:before:bg-primary rounded-lg transition-all"
     >
-     ...... الدورات
+     ...... الدورات++++++
     </TabsTrigger>
 
     <TabsTrigger
