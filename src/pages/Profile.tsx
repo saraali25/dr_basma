@@ -154,7 +154,7 @@ const Profile = () => {
                       ? `${user.first_name} ${user.last_name}`
                       : user?.first_name || "المستخدم"}
                   </h1>
-                  <p className="text-muted-foreground mb-4">{user?.email}</p>
+                  <p className="text-sm sm:text-base text-muted-foreground mb-4">{user?.email}</p>
                   {user && <ProfileEditDialog user={user} onUpdate={handleProfileUpdate} />}
                 </div>
               </div>
