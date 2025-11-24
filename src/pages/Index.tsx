@@ -66,12 +66,13 @@ const Index = () => {
         price: course.price,
       }));
       
-      setCourses(mappedCourses);
-    } catch (error) {
-      console.error("Failed to fetch courses", error);
-    } finally {
-      setLoadingCourses(false);
-    }
+       // 👉 Only keep the first 5
+    setCourses(mappedCourses.slice(0, 5));
+  } catch (error) {
+    console.error("Failed to fetch courses", error);
+  } finally {
+    setLoadingCourses(false);
+  }
   };
 
   const fetchFreeVideos = async () => {
