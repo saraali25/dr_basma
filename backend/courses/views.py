@@ -60,7 +60,7 @@ class CourseListView(generics.ListAPIView):
     
     serializer_class = CourseListSerializer
     permission_classes = (AllowAny,)
-   # pagination_class = None
+    #pagination_class = None
     
     def get_queryset(self):
         queryset = Course.objects.filter(is_published=True)
@@ -93,6 +93,7 @@ class CourseVideosView(generics.ListAPIView):
     
     serializer_class = VideoSerializer
     permission_classes = (IsAuthenticated,)
+    
     
     def get_queryset(self):
         course_id = self.kwargs.get('course_id')
@@ -269,6 +270,7 @@ class AdminCourseListView(generics.ListAPIView):
     queryset = Course.objects.all()
     serializer_class = CourseListSerializer
     permission_classes = (IsStaffUser,)
+    pagination_class = None
 
 
 class AdminCourseCreateView(generics.CreateAPIView):
@@ -300,6 +302,7 @@ class AdminVideoListView(generics.ListAPIView):
     queryset = Video.objects.all()
     serializer_class = VideoSerializer
     permission_classes = (IsStaffUser,)
+    pagination_class = None
     
     def get_queryset(self):
         queryset = Video.objects.all()
@@ -336,6 +339,7 @@ class AdminUserListView(generics.ListAPIView):
     """Admin endpoint for listing all users."""
     
     permission_classes = (IsStaffUser,)
+    pagination_class = None
     
     def get(self, request, *args, **kwargs):
         users = User.objects.all().values('id', 'email', 'first_name', 'last_name', 'is_staff', 'date_joined')
@@ -393,6 +397,7 @@ class AdminPDFListView(generics.ListAPIView):
     queryset = PDF.objects.all()
     serializer_class = PDFSerializer
     permission_classes = (IsStaffUser,)
+    pagination_class = None
 
 
 class AdminPDFCreateView(generics.CreateAPIView):
