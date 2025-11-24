@@ -86,9 +86,7 @@ All colors MUST be HSL.
   }
 }
 /* Hide scrollbar for Chrome, Safari, Opera */
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+
 
 /* Hide scrollbar for IE, Edge, Firefox */
 .hide-scrollbar {
