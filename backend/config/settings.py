@@ -231,4 +231,4 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', '')
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL', EMAIL_HOST_USER)
 
 # Frontend URL for email verification links
-FRONTEND_URL = os.getenv('FRONTEND_URL', 'https://basmakamal.com')
+FRONTEND_URL = os.getenv('FRONTEND_URL', 'https://www.basmakamal.com/')
