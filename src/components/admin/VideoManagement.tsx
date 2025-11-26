@@ -16,7 +16,7 @@ interface Video {
   video_url: string;
   duration: string;
   order: number;
-  course: number;
+  course: number|null;
   course_title: string;
   is_free: boolean;
 }
@@ -135,7 +135,8 @@ export const VideoManagement = () => {
         video_url: formData.video_url,
         description: formData.description,
         duration: formData.duration,
-        course: parseInt(formData.course),
+       // course: parseInt(formData.course),
+        course: formData.course ? parseInt(formData.course) : null,
         order: parseInt(formData.order.toString()),
         is_free: formData.is_free,
       };
@@ -190,7 +191,8 @@ export const VideoManagement = () => {
       description: "",
       duration: video.duration,
       order: video.order,
-      course: video.course.toString(),
+      //course: video.course.toString(),
+      course: video.course ? video.course.toString() : "",
       is_free: video.is_free || false,
     });
     setDialogOpen(true);
