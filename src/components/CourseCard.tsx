@@ -47,7 +47,8 @@ const CourseCard = ({
   price,
   is_free,
 }: CourseCardProps) => {
-  const isFree = is_free || price === null || price === 0;
+  //const isFree = is_free || price === null || price === 0;
+  const isFree = is_free === true;
   return (
     <div className="group bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-border">
       {/* 🖼 Course image area */}
