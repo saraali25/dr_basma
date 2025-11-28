@@ -259,7 +259,7 @@ const Index = () => {
                            <VideoPlayer 
                               videoUrl={video.video_url} 
                               title={video.title} 
-                            />
+                            /> .......
                             /*<a
                               href={video.video_url}
                               target="_blank"
