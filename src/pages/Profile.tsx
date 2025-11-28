@@ -37,6 +37,7 @@ interface Course {
   thumbnail: string;
   thumbnail_url?: string;
   category: { id: number; name: string };
+  is_free: boolean;
 }
 
 const Profile = () => {
@@ -77,6 +78,7 @@ const Profile = () => {
               thumbnail_url: courseData.thumbnail_url || "",
               category: categoryData,
               last_watched_video: item.last_watched_video || null,
+              is_free: courseData.is_free || false,
             },
           };
         });
@@ -273,6 +275,7 @@ const Profile = () => {
                       duration={course.duration}
                       videoCount={course.video_count}
                       thumbnail={course.thumbnail_url || course.thumbnail}
+                      is_free={course.is_free}
                     />
                   ))}
                 </div>

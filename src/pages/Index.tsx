@@ -65,6 +65,7 @@ const Index = () => {
         videoCount: course.video_count,
         thumbnail: course.thumbnail_url || course.thumbnail,
         price: course.price,
+        is_free: course.is_free,
       }));
       
        // 👉 Only keep the first 5

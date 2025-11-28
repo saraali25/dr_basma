@@ -29,8 +29,7 @@ const Courses = () => {
     const fetchCourses = async () => {
       try {
         const response = await coursesAPI.getAll();
-         console.log('API Response:', response); // Add this line
-        console.log('Response data:', response.data); // Add this line
+         
         
           const data = response.data;
         const list = Array.isArray(data) ? data : data.results ?? [];
