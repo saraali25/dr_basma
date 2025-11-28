@@ -69,7 +69,7 @@ export default function ReviewsCarousel({ reviewPhotos }: ReviewsCarouselProps) 
                       <img
                         src={photo.image_url}
                         alt={photo.title}
-                        className="w-full h-64 object-contain bg-muted""
+                        className="w-full h-64 object-contain bg-muted"
                       />
                     ) : (
                       <div className="p-6 space-y-4">
