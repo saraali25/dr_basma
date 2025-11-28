@@ -256,10 +256,10 @@ const Index = () => {
                             <span className="text-sm text-muted-foreground">المدة: {video.duration}</span>
                           </div>
                           {video.video_url && (
-                           <VideoPlayer 
-                              videoUrl={video.video_url} 
-                              title={video.title} 
-                            /> 
+                             <VideoPlayer 
+                               videoUrl={video.video_url} 
+                               title={video.title} 
+                              /> 
                            
                            )}
                           </div>
