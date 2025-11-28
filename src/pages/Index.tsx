@@ -184,7 +184,7 @@ const Index = () => {
             )}
             {activeTab === "videos" && (
               <>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">.......الفيديوهات المجانية######</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">الفيديوهات المجانية</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   شاهد فيديوهاتنا المجانية للتعرف على محتوى الدورات
                 </p>
