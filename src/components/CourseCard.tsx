@@ -52,7 +52,7 @@ const CourseCard = ({
   return (
     <div className="group bg-card rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-border">
       {/* 🖼 Course image area */}
-      <div className="relative overflow-hidden bg-muted aspect-[16/9]">
+      <div className="relative overflow-hidden bg-muted aspect-square">
         <img
           src={thumbnail ? getFullImageUrl(thumbnail) : "/placeholder.svg"}
           alt={title || "Course placeholder"}
