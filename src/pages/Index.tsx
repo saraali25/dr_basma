@@ -260,16 +260,7 @@ const Index = () => {
                               videoUrl={video.video_url} 
                               title={video.title} 
                             /> 
-                            /*<a
-                              href={video.video_url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="block"
-                            >
-                              <Button className="w-full" variant="default">
-                                شاهدى الآن
-                              </Button>
-                            </a> */
+                           
                           )}
                         </div>
                       </CardContent>
