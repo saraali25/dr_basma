@@ -8,6 +8,7 @@ import { ArrowLeft, CheckCircle, Star, Play } from "lucide-react";
 import { useState, useEffect } from "react";
 import { videosAPI, reviewPhotosAPI, coursesAPI } from "@/lib/api";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import VideoPlayer from "@/components/VideoPlayer";
 import heroImage from "@/assets/hero-image.jpg";
 import certifiedBadge from "@/assets/certified-badge.png";
 import { useRef } from "react";
@@ -255,7 +256,11 @@ const Index = () => {
                             <span className="text-sm text-muted-foreground">المدة: {video.duration}</span>
                           </div>
                           {video.video_url && (
-                            <a
+                           <VideoPlayer 
+                              videoUrl={video.video_url} 
+                              title={video.title} 
+                            />
+                            /*<a
                               href={video.video_url}
                               target="_blank"
                               rel="noopener noreferrer"
@@ -264,7 +269,7 @@ const Index = () => {
                               <Button className="w-full" variant="default">
                                 شاهدى الآن
                               </Button>
-                            </a>
+                            </a>*/
                           )}
                         </div>
                       </CardContent>
