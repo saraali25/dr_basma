@@ -261,8 +261,8 @@ const Index = () => {
                               title={video.title} 
                             /> 
                            
-                          )}
-                        </div>
+                           )}
+                          </div>
                       </CardContent>
                     </Card>
                   ))}
