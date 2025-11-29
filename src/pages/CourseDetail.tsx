@@ -385,7 +385,7 @@ const CourseDetail = () => {
 
               <div className="md:col-span-1">
                 <div className="bg-card rounded-xl p-6 shadow-lg border border-border sticky top-24">
-                  <div className="aspect-square bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                  <div className="aspect-[16/9] bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                     {(course.thumbnail_url || course.thumbnail) ? (
                       <img 
                         src={getFullImageUrl(course.thumbnail_url || course.thumbnail)} 
