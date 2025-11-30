@@ -8,7 +8,11 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+   
    withCredentials: false, // set true only if using cookies/session auth
+   timeout: 300000, // 5 minutes timeout for large file uploads
+   maxContentLength: Infinity,
+   maxBodyLength: Infinity,
 });
 
 // Request interceptor to add auth token
